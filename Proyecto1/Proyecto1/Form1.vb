@@ -1,40 +1,25 @@
 ﻿Public Class Form1
     Dim vbtn_Valor(4) As Button
+    Dim vbtn_oper(4) As Button
+    Dim vtxt_Valor(9) As TextBox
+    Dim rnd As New Random()
 
     Public Sub New()
-
         ' Esta llamada es exigida por el diseñador.
         InitializeComponent()
 
-        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
+        ' Inicializar los arrays
         vbtn_Valor(1) = vbtn_Valor1
         vbtn_Valor(2) = vbtn_Valor2
         vbtn_Valor(3) = vbtn_Valor3
         vbtn_Valor(4) = vbtn_Valor4
-    End Sub
 
-    Dim vbtn_oper(4) As Button
+        vbtn_oper(1) = btn_oper1
+        vbtn_oper(2) = btn_oper2
+        vbtn_oper(3) = btn_oper3
+        vbtn_oper(4) = btn_oper4
 
-    Public Sub New_Oper()
 
-        ' Esta llamada es exigida por el diseñador.
-        InitializeComponent()
-
-        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
-        vbtn_oper(1).Text = "+"
-        vbtn_oper(2).Text = "-"
-        vbtn_oper(3).Text = "*"
-        vbtn_oper(4).Text = "/"
-    End Sub
-
-    Dim vtxt_Valor(9) As TextBox
-
-    Public Sub New_txt()
-
-        ' Esta llamada es exigida por el diseñador.
-        InitializeComponent()
-
-        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
         vtxt_Valor(1) = vtxt_Valor1
         vtxt_Valor(2) = vtxt_Valor2
         vtxt_Valor(3) = vtxt_Valor3
@@ -47,70 +32,50 @@
     End Sub
 
     Private Sub DisableOper()
-
         For i = 1 To 4
             vbtn_oper(i).Enabled = False
         Next
     End Sub
 
     Private Sub BorrarTodo()
-
-        For i = 1 To 4
+        For i = 1 To 9
             vtxt_Valor(i).Text = ""
         Next
     End Sub
 
-
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-
-    End Sub
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        txt_Contador.Text = "60"
+        vbtn_oper(1).Text = "+"
+        vbtn_oper(2).Text = "-"
+        vbtn_oper(3).Text = "*"
+        vbtn_oper(4).Text = "/"
     End Sub
 
-    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles vtxt_Valor8.TextChanged
-
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles vbtn_Valor3.Click
-
-    End Sub
-
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles btn_Iniciar.Click
-        Dim rnd As New Random()
+    Private Sub btn_Iniciar_Click(sender As Object, e As EventArgs) Handles btn_Iniciar.Click
 
         For i = 1 To 4
-            vbtn_Valor(i).Text = rnd.Next(1, 5)
+            vbtn_Valor(i).Text = rnd.Next(1, 5).ToString()
         Next
         tmr_Contador.Enabled = True
         btn_Iniciar.Enabled = False
-
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
+        DisableOper()
     End Sub
 
     Private Sub tmr_Contador_Tick(sender As Object, e As EventArgs) Handles tmr_Contador.Tick
-        txt_Contador.Text = Val(txt_Contador.Text) + 1
+        txt_Contador.Text = Val(txt_Contador.Text) - 1
     End Sub
 
     Private Sub vbtn_Valor1_Click(sender As Object, e As EventArgs) Handles vbtn_Valor1.Click
         vtxt_Valor1.Text = vbtn_Valor1.Text
     End Sub
 
-    Private Sub vbtn_Valor2_Click(sender As Object, e As EventArgs) Handles vbtn_Valor2.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles btn_oper1.Click
 
     End Sub
 
-    Private Sub vtxt_Valor3_TextChanged(sender As Object, e As EventArgs) Handles vtxt_Valor3.TextChanged
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles btn_oper3.Click
 
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles btn_BorrarTodo.Click
-        BorrarTodo()
-    End Sub
+
 End Class

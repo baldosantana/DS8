@@ -37,10 +37,10 @@ Partial Class Form1
         vbtn_Valor2 = New Button()
         vbtn_Valor3 = New Button()
         vbtn_Valor4 = New Button()
-        Button5 = New Button()
-        Button6 = New Button()
-        Button7 = New Button()
-        Button8 = New Button()
+        btn_oper1 = New Button()
+        btn_oper2 = New Button()
+        btn_oper3 = New Button()
+        btn_oper4 = New Button()
         btn_Iniciar = New Button()
         vtxt_Valor9 = New TextBox()
         Button10 = New Button()
@@ -157,37 +157,37 @@ Partial Class Form1
         vbtn_Valor4.TabIndex = 13
         vbtn_Valor4.UseVisualStyleBackColor = True
         ' 
-        ' Button5
+        ' btn_oper1
         ' 
-        Button5.Location = New Point(102, 286)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(42, 23)
-        Button5.TabIndex = 14
-        Button5.UseVisualStyleBackColor = True
+        btn_oper1.Location = New Point(102, 286)
+        btn_oper1.Name = "btn_oper1"
+        btn_oper1.Size = New Size(42, 23)
+        btn_oper1.TabIndex = 14
+        btn_oper1.UseVisualStyleBackColor = True
         ' 
-        ' Button6
+        ' btn_oper2
         ' 
-        Button6.Location = New Point(150, 286)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(42, 23)
-        Button6.TabIndex = 15
-        Button6.UseVisualStyleBackColor = True
+        btn_oper2.Location = New Point(150, 286)
+        btn_oper2.Name = "btn_oper2"
+        btn_oper2.Size = New Size(42, 23)
+        btn_oper2.TabIndex = 15
+        btn_oper2.UseVisualStyleBackColor = True
         ' 
-        ' Button7
+        ' btn_oper3
         ' 
-        Button7.Location = New Point(198, 286)
-        Button7.Name = "Button7"
-        Button7.Size = New Size(42, 23)
-        Button7.TabIndex = 16
-        Button7.UseVisualStyleBackColor = True
+        btn_oper3.Location = New Point(198, 286)
+        btn_oper3.Name = "btn_oper3"
+        btn_oper3.Size = New Size(42, 23)
+        btn_oper3.TabIndex = 16
+        btn_oper3.UseVisualStyleBackColor = True
         ' 
-        ' Button8
+        ' btn_oper4
         ' 
-        Button8.Location = New Point(246, 286)
-        Button8.Name = "Button8"
-        Button8.Size = New Size(42, 23)
-        Button8.TabIndex = 17
-        Button8.UseVisualStyleBackColor = True
+        btn_oper4.Location = New Point(246, 286)
+        btn_oper4.Name = "btn_oper4"
+        btn_oper4.Size = New Size(42, 23)
+        btn_oper4.TabIndex = 17
+        btn_oper4.UseVisualStyleBackColor = True
         ' 
         ' btn_Iniciar
         ' 
@@ -254,10 +254,10 @@ Partial Class Form1
         Controls.Add(Button10)
         Controls.Add(vtxt_Valor9)
         Controls.Add(btn_Iniciar)
-        Controls.Add(Button8)
-        Controls.Add(Button7)
-        Controls.Add(Button6)
-        Controls.Add(Button5)
+        Controls.Add(btn_oper4)
+        Controls.Add(btn_oper3)
+        Controls.Add(btn_oper2)
+        Controls.Add(btn_oper1)
         Controls.Add(vbtn_Valor4)
         Controls.Add(vbtn_Valor3)
         Controls.Add(vbtn_Valor2)
@@ -292,10 +292,10 @@ Partial Class Form1
     Friend WithEvents vbtn_Valor2 As Button
     Friend WithEvents vbtn_Valor3 As Button
     Friend WithEvents vbtn_Valor4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
+    Friend WithEvents btn_oper1 As Button
+    Friend WithEvents btn_oper2 As Button
+    Friend WithEvents btn_oper3 As Button
+    Friend WithEvents btn_oper4 As Button
     Friend WithEvents btn_Iniciar As Button
     Friend WithEvents vtxt_Valor9 As TextBox
     Friend WithEvents Button10 As Button
