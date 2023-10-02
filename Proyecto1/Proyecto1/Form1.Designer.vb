@@ -64,6 +64,7 @@ Partial Class Form1
         ' 
         vtxt_Valor1.Location = New Point(51, 177)
         vtxt_Valor1.Name = "vtxt_Valor1"
+        vtxt_Valor1.ReadOnly = True
         vtxt_Valor1.Size = New Size(33, 23)
         vtxt_Valor1.TabIndex = 1
         ' 
@@ -71,6 +72,7 @@ Partial Class Form1
         ' 
         vtxt_Valor2.Location = New Point(90, 177)
         vtxt_Valor2.Name = "vtxt_Valor2"
+        vtxt_Valor2.ReadOnly = True
         vtxt_Valor2.Size = New Size(33, 23)
         vtxt_Valor2.TabIndex = 2
         ' 
@@ -78,6 +80,7 @@ Partial Class Form1
         ' 
         vtxt_Valor3.Location = New Point(129, 177)
         vtxt_Valor3.Name = "vtxt_Valor3"
+        vtxt_Valor3.ReadOnly = True
         vtxt_Valor3.Size = New Size(33, 23)
         vtxt_Valor3.TabIndex = 3
         ' 
@@ -85,6 +88,7 @@ Partial Class Form1
         ' 
         vtxt_Valor4.Location = New Point(168, 177)
         vtxt_Valor4.Name = "vtxt_Valor4"
+        vtxt_Valor4.ReadOnly = True
         vtxt_Valor4.Size = New Size(33, 23)
         vtxt_Valor4.TabIndex = 4
         ' 
@@ -92,6 +96,7 @@ Partial Class Form1
         ' 
         vtxt_Valor5.Location = New Point(207, 177)
         vtxt_Valor5.Name = "vtxt_Valor5"
+        vtxt_Valor5.ReadOnly = True
         vtxt_Valor5.Size = New Size(33, 23)
         vtxt_Valor5.TabIndex = 5
         ' 
@@ -99,6 +104,7 @@ Partial Class Form1
         ' 
         vtxt_Valor6.Location = New Point(246, 177)
         vtxt_Valor6.Name = "vtxt_Valor6"
+        vtxt_Valor6.ReadOnly = True
         vtxt_Valor6.Size = New Size(33, 23)
         vtxt_Valor6.TabIndex = 6
         ' 
@@ -106,6 +112,7 @@ Partial Class Form1
         ' 
         vtxt_Valor7.Location = New Point(285, 177)
         vtxt_Valor7.Name = "vtxt_Valor7"
+        vtxt_Valor7.ReadOnly = True
         vtxt_Valor7.Size = New Size(33, 23)
         vtxt_Valor7.TabIndex = 7
         ' 
@@ -122,6 +129,7 @@ Partial Class Form1
         ' 
         vtxt_Valor8.Location = New Point(345, 177)
         vtxt_Valor8.Name = "vtxt_Valor8"
+        vtxt_Valor8.ReadOnly = True
         vtxt_Valor8.Size = New Size(33, 23)
         vtxt_Valor8.TabIndex = 9
         ' 
@@ -202,6 +210,7 @@ Partial Class Form1
         ' 
         vtxt_Valor9.Location = New Point(345, 206)
         vtxt_Valor9.Name = "vtxt_Valor9"
+        vtxt_Valor9.ReadOnly = True
         vtxt_Valor9.Size = New Size(33, 23)
         vtxt_Valor9.TabIndex = 19
         ' 

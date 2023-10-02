@@ -31,9 +31,30 @@
         vtxt_Valor(9) = vtxt_Valor9
     End Sub
 
+
+    Private Sub DisableValor()
+        For i = 1 To 4
+            vbtn_Valor(i).Enabled = False
+        Next
+    End Sub
+
+    Private Sub EnableValor()
+        For i As Integer = 1 To 4
+            If vbtn_Valor(i).Tag = 0 Then
+                vbtn_Valor(i).Enabled = True
+            End If
+        Next
+    End Sub
+
     Private Sub DisableOper()
         For i = 1 To 4
             vbtn_oper(i).Enabled = False
+        Next
+    End Sub
+
+    Private Sub EnableOper()
+        For i = 1 To 4
+            vbtn_oper(i).Enabled = True
         Next
     End Sub
 
@@ -56,6 +77,9 @@
         For i = 1 To 4
             vbtn_Valor(i).Text = rnd.Next(1, 5).ToString()
         Next
+        For i = 1 To 7
+            vtxt_Valor(i).Tag = 0
+        Next
         tmr_Contador.Enabled = True
         btn_Iniciar.Enabled = False
         DisableOper()
@@ -66,16 +90,46 @@
     End Sub
 
     Private Sub vbtn_Valor1_Click(sender As Object, e As EventArgs) Handles vbtn_Valor1.Click
-        vtxt_Valor1.Text = vbtn_Valor1.Text
+        For i As Integer = 1 To 7
+            If String.IsNullOrEmpty(vtxt_Valor(i).Text) Then
+                vtxt_Valor(i).Text = vbtn_Valor1.Text
+                vbtn_Valor(i).Tag = 1
+                Exit For ' Salir del bucle después de encontrar el primero
+            End If
+        Next
+        DisableValor()
+        EnableOper()
+
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles btn_oper1.Click
+    Private Sub btn_oper1_Click(sender As Object, e As EventArgs) Handles btn_oper1.Click
+        'vtxt_Valor(2).Text = btn_oper1.Text
+        ' For i As Integer = 1 To 7
+        '   If vtxt_Valor(i).Tag = 0 Then
+        '      vtxt_Valor(i).Text = btn_oper1.Text
+        ' End If
+        'Next
+        For i As Integer = 1 To 7
+            If String.IsNullOrEmpty(vtxt_Valor(i).Text) Then
+                vtxt_Valor(i).Text = btn_oper1.Text
+                vtxt_Valor(i).Tag = 1
+                Exit For ' Salir del bucle después de encontrar el primero
+            End If
+        Next
+        DisableOper()
+        EnableValor()
 
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles btn_oper3.Click
-
+    Private Sub vbtn_Valor2_Click(sender As Object, e As EventArgs) Handles vbtn_Valor2.Click
+        For i As Integer = 1 To 7
+            If String.IsNullOrEmpty(vtxt_Valor(i).Text) Then
+                vtxt_Valor(i).Text = vbtn_Valor2.Text
+                vbtn_Valor(i).Tag = 1
+                Exit For ' Salir del bucle después de encontrar el primero
+            End If
+        Next
+        DisableValor()
+        EnableOper()
     End Sub
-
-
 End Class
