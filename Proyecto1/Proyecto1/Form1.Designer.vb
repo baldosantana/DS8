@@ -42,7 +42,7 @@ Partial Class Form1
         btn_oper3 = New Button()
         btn_oper4 = New Button()
         btn_Iniciar = New Button()
-        vtxt_Valor9 = New TextBox()
+        vtxt_res = New TextBox()
         Button10 = New Button()
         btn_BorrarTodo = New Button()
         Label3 = New Label()
@@ -206,13 +206,13 @@ Partial Class Form1
         btn_Iniciar.Text = "Iniciar"
         btn_Iniciar.UseVisualStyleBackColor = True
         ' 
-        ' vtxt_Valor9
+        ' vtxt_res
         ' 
-        vtxt_Valor9.Location = New Point(345, 206)
-        vtxt_Valor9.Name = "vtxt_Valor9"
-        vtxt_Valor9.ReadOnly = True
-        vtxt_Valor9.Size = New Size(33, 23)
-        vtxt_Valor9.TabIndex = 19
+        vtxt_res.Location = New Point(345, 206)
+        vtxt_res.Name = "vtxt_res"
+        vtxt_res.ReadOnly = True
+        vtxt_res.Size = New Size(33, 23)
+        vtxt_res.TabIndex = 19
         ' 
         ' Button10
         ' 
@@ -261,7 +261,7 @@ Partial Class Form1
         Controls.Add(Label3)
         Controls.Add(btn_BorrarTodo)
         Controls.Add(Button10)
-        Controls.Add(vtxt_Valor9)
+        Controls.Add(vtxt_res)
         Controls.Add(btn_Iniciar)
         Controls.Add(btn_oper4)
         Controls.Add(btn_oper3)
@@ -306,7 +306,7 @@ Partial Class Form1
     Friend WithEvents btn_oper3 As Button
     Friend WithEvents btn_oper4 As Button
     Friend WithEvents btn_Iniciar As Button
-    Friend WithEvents vtxt_Valor9 As TextBox
+    Friend WithEvents vtxt_res As TextBox
     Friend WithEvents Button10 As Button
     Friend WithEvents btn_BorrarTodo As Button
     Friend WithEvents Label3 As Label
